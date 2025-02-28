@@ -1,0 +1,51 @@
+{
+  "name": "transaction_api",
+  "version": "1.0.0",
+  "description": "A simple API in NodeJS to study some crud and database concepts ",
+  "engines": {
+    "node": ">= 22"
+  },
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest",
+    "knex": "npx knex",
+    "build": "tsup src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bentodvictor/transaction_api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "vite",
+    "vitest",
+    "knex",
+    "sqlite"
+  ],
+  "author": "Victor Dallagnol Bento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bentodvictor/transaction_api/issues"
+  },
+  "homepage": "https://github.com/bentodvictor/transaction_api#readme",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "knex": "^3.1.0",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^9.21.0",
+    "sqlite3": "^5.1.7",
+    "supertest": "^7.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  }
+}
